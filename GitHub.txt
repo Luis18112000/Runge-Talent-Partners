@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Runge Talent Partners</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #2A2A2A;
+      background-color: #F5F7F6;
+    }
+
+    header {
+      background: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    header h1 {
+      color: #1F3F3F;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #1F3F3F;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 120px 60px;
+      text-align: center;
+      background: #F5F7F6;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      color: #1F3F3F;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #4F8F87;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .btn {
+      background: #1F3F3F;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 80px 60px;
+      background: white;
+    }
+
+    .section h3 {
+      color: #1F3F3F;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .columns {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 260px;
+      background: #F5F7F6;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #1F3F3F;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Runge Talent Partners</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Leistungen</a>
+    <a href="#about">Über uns</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Executive Search für junge Talente</h2>
+  <p>
+    Wir verbinden ambitionierte Nachwuchstalente mit führenden Unternehmen
+    in Liechtenstein und der Region.
+  </p>
+  <a href="#contact" class="btn">Kontakt aufnehmen</a>
+</section>
+
+<section id="services" class="section">
+  <h3>Unsere Leistungen</h3>
+  <div class="columns">
+    <div class="card">
+      <h4>Talent Acquisition</h4>
+      <p>Gezielte Identifikation und Ansprache von High Potentials.</p>
+    </div>
+    <div class="card">
+      <h4>Executive Search</h4>
+      <p>Besetzung von Schlüsselpositionen mit jungen Führungskräften.</p>
+    </div>
+    <div class="card">
+      <h4>Karriereberatung</h4>
+      <p>Individuelle Begleitung für ambitionierte Talente.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h3>Über Runge Talent Partners</h3>
+  <p style="max-width: 700px;">
+    Wir sind spezialisiert auf die Verbindung von jungen, leistungsstarken Talenten
+    mit innovativen Unternehmen. Unser Fokus liegt auf Qualität, Diskretion und
+    langfristigen Partnerschaften.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h3>Kontakt</h3>
+  <p>Email: info@runge-talents.com</p>
+  <p>Liechtenstein & Region</p>
+</section>
+
+<footer>
+  <p>© 2026 Runge Talent Partners</p>
+</footer>
+
+</body>
+</html>
