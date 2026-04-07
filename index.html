@@ -8,50 +8,51 @@
   <style>
     body {
       margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      color: #2A2A2A;
-      background-color: #F5F7F6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1a1a1a;
+      background-color: #ffffff;
     }
 
     header {
-      background: white;
-      padding: 20px 60px;
+      padding: 25px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #eee;
     }
 
     header h1 {
+      font-size: 20px;
+      letter-spacing: 1px;
       color: #1F3F3F;
-      font-size: 24px;
-      margin: 0;
     }
 
     nav a {
       margin-left: 30px;
       text-decoration: none;
       color: #1F3F3F;
+      font-size: 14px;
       font-weight: 500;
     }
 
     .hero {
-      padding: 120px 60px;
+      padding: 140px 20px;
       text-align: center;
-      background: #F5F7F6;
+      max-width: 900px;
+      margin: auto;
     }
 
     .hero h2 {
-      font-size: 42px;
-      color: #1F3F3F;
+      font-size: 44px;
+      line-height: 1.2;
       margin-bottom: 20px;
+      color: #1F3F3F;
     }
 
     .hero p {
       font-size: 18px;
-      color: #4F8F87;
-      max-width: 700px;
-      margin: 0 auto 40px;
+      color: #555;
+      margin-bottom: 40px;
     }
 
     .btn {
@@ -60,39 +61,62 @@
       padding: 14px 28px;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     .section {
-      padding: 80px 60px;
-      background: white;
+      padding: 100px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
 
     .section h3 {
-      color: #1F3F3F;
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      color: #1F3F3F;
     }
 
-    .columns {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
     }
 
     .card {
-      flex: 1;
-      min-width: 260px;
-      background: #F5F7F6;
       padding: 30px;
+      border: 1px solid #eee;
       border-radius: 10px;
+      background: #fafafa;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #1F3F3F;
+    }
+
+    .about p {
+      max-width: 700px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 100px 20px;
+      background: #1F3F3F;
+      color: white;
+    }
+
+    .cta h3 {
+      margin-bottom: 20px;
+      font-size: 28px;
     }
 
     footer {
-      background: #1F3F3F;
-      color: white;
       text-align: center;
       padding: 40px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
@@ -100,9 +124,8 @@
 <body>
 
 <header>
-  <h1>Runge Talent Partners</h1>
+  <h1>RUNGE TALENT PARTNERS</h1>
   <nav>
-    <a href="#">Home</a>
     <a href="#services">Leistungen</a>
     <a href="#about">Über uns</a>
     <a href="#contact">Kontakt</a>
@@ -110,49 +133,50 @@
 </header>
 
 <section class="hero">
-  <h2>Executive Search für junge Talente</h2>
+  <h2>Executive Search für High-Potential Talente</h2>
   <p>
-    Wir verbinden ambitionierte Nachwuchstalente mit führenden Unternehmen
-    in Liechtenstein und der Region.
+    Wir identifizieren und verbinden ambitionierte Nachwuchsführungskräfte
+    mit führenden Unternehmen in Liechtenstein und der Region.
   </p>
-  <a href="#contact" class="btn">Kontakt aufnehmen</a>
+  <a href="#contact" class="btn">Erstgespräch vereinbaren</a>
 </section>
 
 <section id="services" class="section">
-  <h3>Unsere Leistungen</h3>
-  <div class="columns">
-    <div class="card">
-      <h4>Talent Acquisition</h4>
-      <p>Gezielte Identifikation und Ansprache von High Potentials.</p>
-    </div>
+  <h3>Leistungen</h3>
+  <div class="grid">
     <div class="card">
       <h4>Executive Search</h4>
-      <p>Besetzung von Schlüsselpositionen mit jungen Führungskräften.</p>
+      <p>Gezielte Besetzung von Schlüsselpositionen mit jungen Führungstalenten.</p>
     </div>
     <div class="card">
-      <h4>Karriereberatung</h4>
-      <p>Individuelle Begleitung für ambitionierte Talente.</p>
+      <h4>Talent Mapping</h4>
+      <p>Strukturierte Identifikation von High Potentials im relevanten Markt.</p>
+    </div>
+    <div class="card">
+      <h4>Career Advisory</h4>
+      <p>Individuelle Beratung für ambitionierte Talente auf ihrem Karriereweg.</p>
     </div>
   </div>
 </section>
 
-<section id="about" class="section">
-  <h3>Über Runge Talent Partners</h3>
-  <p style="max-width: 700px;">
-    Wir sind spezialisiert auf die Verbindung von jungen, leistungsstarken Talenten
-    mit innovativen Unternehmen. Unser Fokus liegt auf Qualität, Diskretion und
-    langfristigen Partnerschaften.
+<section id="about" class="section about">
+  <h3>Über uns</h3>
+  <p>
+    Runge Talent Partners ist spezialisiert auf die Besetzung von Schlüsselpositionen
+    mit jungen, leistungsstarken Talenten. Unser Ansatz kombiniert diskrete Direktansprache
+    mit einem tiefen Verständnis für Märkte, Unternehmen und Persönlichkeiten.
   </p>
 </section>
 
-<section id="contact" class="section">
-  <h3>Kontakt</h3>
-  <p>Email: info@runge-talents.com</p>
-  <p>Liechtenstein & Region</p>
+<section class="cta" id="contact">
+  <h3>Diskret. Präzise. Persönlich.</h3>
+  <p>Kontaktieren Sie uns für ein unverbindliches Erstgespräch.</p>
+  <br>
+  <a href="mailto:info@runge-talents.com" class="btn">Kontakt aufnehmen</a>
 </section>
 
 <footer>
-  <p>© 2026 Runge Talent Partners</p>
+  © 2026 Runge Talent Partners
 </footer>
 
 </body>
